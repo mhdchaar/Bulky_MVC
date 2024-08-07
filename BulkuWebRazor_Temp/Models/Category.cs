@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace BulkyWeb.Models
+namespace BulkuWebRazor_Temp.Models
 {
+
     public class Category
     {
         [Key]
@@ -15,4 +16,7 @@ namespace BulkyWeb.Models
         [Range(1, 100, ErrorMessage = "Order must be between 1-100")]
         public int Display { get; set; }
     }
+
+
 }
+

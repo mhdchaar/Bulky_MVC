@@ -1,11 +1,12 @@
-﻿using BulkyWeb.Models;
+﻿using BulkuWebRazor_Temp.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace BulkyWeb.Data
+namespace BulkuWebRazor_Temp.Data
 {
-    public class ApplicationDB : DbContext
+
+    public class ApplicationDbContext : DbContext
     {
-        public ApplicationDB(DbContextOptions<ApplicationDB> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 
         }
@@ -21,4 +22,5 @@ namespace BulkyWeb.Data
                 );
         }
     }
+
 }
